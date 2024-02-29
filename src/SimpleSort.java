@@ -47,4 +47,20 @@ public class SimpleSort
         }
         System.out.println("numbers are sorted by bubble sort");
     }
+    public void selectionSort()
+    {
+        for (int i=0; i<nElement-1 ;i++)
+        {
+            int minIndex=i;
+            for (int j=i+1; j<nElement ;j++)
+            {
+                if(arr[j]<arr[minIndex])
+                {
+                    minIndex=j;
+                }
+            }
+            swap(i,minIndex);
+        }
+        System.out.println("numbers are sorted by selection sort");
+    }
 }

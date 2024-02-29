@@ -11,7 +11,7 @@ public class Main
         s1.insert(3);
 
         s1.display();
-        s1.bubbleSort();
+        s1.selectionSort();
         s1.display();
     }
 }
