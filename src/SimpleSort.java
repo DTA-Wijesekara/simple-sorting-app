@@ -22,7 +22,7 @@ public class SimpleSort
         System.out.println("array content");
         for (int i = 0; i < this.nElement ;i++)
         {
-            System.out.println(this.arr[i]);
+            System.out.print(this.arr[i] + " ");
         }
         System.out.println();
     }
@@ -32,5 +32,19 @@ public class SimpleSort
         temp = arr[index2];
         arr[index2] = arr[index1];
         arr[index1] = temp;
+    }
+    public void bubbleSort()
+    {
+        for (int i=0; i<nElement-1 ;i++)
+        {
+            for (int j=0; j<(nElement-1)-i ;j++)
+            {
+                if(arr[j]>arr[j+1])
+                {
+                    swap(j,j+1);
+                }
+            }
+        }
+        System.out.println("numbers are sorted by bubble sort");
     }
 }

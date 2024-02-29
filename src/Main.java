@@ -4,5 +4,14 @@ public class Main
 {
     public static void main(String[] args)
     {
+        SimpleSort s1 = new SimpleSort(7);
+        s1.insert(4);
+        s1.insert(8);
+        s1.insert(1);
+        s1.insert(3);
+
+        s1.display();
+        s1.bubbleSort();
+        s1.display();
     }
 }
