@@ -63,4 +63,26 @@ public class SimpleSort
         }
         System.out.println("numbers are sorted by selection sort");
     }
+    public void insertionSort()
+    {
+        for (int i=1; i<nElement ;i++)
+        {
+            int key = arr[i];
+            int j = i-1;
+            while (j>=0)
+            {
+                if (arr[j]>key)
+                {
+                    arr[j+1] = arr[j];
+                }
+                else
+                {
+                    break;
+                }
+                j--;
+            }
+            arr[j+1] = key;
+        }
+        System.out.println("numbers are sorted by insertion sort");
+    }
 }
